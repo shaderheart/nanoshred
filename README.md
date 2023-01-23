@@ -17,8 +17,8 @@
  
  ## Screenshots
  Car Scene with an HDRI Background, Reflections and Glass:
-![Screenshot 2023-01-23 at 10 58 15 copy](https://user-images.githubusercontent.com/69399262/214122056-406a2f5e-994d-427e-9acf-7e43f5b1bde6.png)
-![Screenshot 2023-01-23 at 10 59 03 copy](https://user-images.githubusercontent.com/69399262/214122366-1bde8a55-d3e4-48e6-b9ef-ab264f69aa1e.png)
+![Screenshot 2023-01-23 at 23 02 38](https://user-images.githubusercontent.com/69399262/214138728-9f0b7871-19e6-4f39-94b5-d3ed11e27b2b.png)
+![Screenshot 2023-01-23 at 23 02 59](https://user-images.githubusercontent.com/69399262/214138755-8da05bba-4bed-486c-a068-c53f1ee44d56.png)
 
 Material rough/metallic, HDRI Background and Reflections:
 ![Screenshot 2023-01-23 at 22 45 31](https://user-images.githubusercontent.com/69399262/214137714-105202db-4597-4281-abc9-2d3b6d60b401.png)

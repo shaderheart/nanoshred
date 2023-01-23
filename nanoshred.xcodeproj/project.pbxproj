@@ -1,0 +1,1003 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5401B0D6293CD4E800EB2B90 /* MetalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418E5DA28E625540095562D /* MetalScene.swift */; };
+		5401B0D7293CD4E800EB2B90 /* MetalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418E5DA28E625540095562D /* MetalScene.swift */; };
+		5403F65228DE28060073A0DB /* shred_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5403F65128DE28060073A0DB /* shred_iosApp.swift */; };
+		5403F65428DE28060073A0DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5403F65328DE28060073A0DB /* ContentView.swift */; };
+		5403F65928DE28070073A0DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5403F65828DE28070073A0DB /* Preview Assets.xcassets */; };
+		5403F65E28DE28320073A0DB /* MetalFlightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B2C6128DC9A6600879148 /* MetalFlightController.swift */; };
+		5403F65F28DE28340073A0DB /* MathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B2C5F28DC706000879148 /* MathFunctions.swift */; };
+		5403F66528DE28490073A0DB /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 547B2C5828DBA35200879148 /* Shaders.metal */; };
+		5413EEB5294140DE00BFC589 /* FilePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5413EEB4294140DE00BFC589 /* FilePicker.swift */; };
+		541AFD43297D2C2700632374 /* ShadowShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 541AFD42297D2C2600632374 /* ShadowShaders.metal */; };
+		5427212E297C8B2800080DAA /* InputSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5427212D297C8B2800080DAA /* InputSystem.swift */; };
+		5427212F297C8B4200080DAA /* InputSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5427212D297C8B2800080DAA /* InputSystem.swift */; };
+		54272130297C8B4300080DAA /* InputSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5427212D297C8B2800080DAA /* InputSystem.swift */; };
+		543011F1294274C500212A0F /* PhysxBindings.mm in Sources */ = {isa = PBXBuildFile; fileRef = 543011EF294274C500212A0F /* PhysxBindings.mm */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		54305E302948C873006D3AAB /* music in Resources */ = {isa = PBXBuildFile; fileRef = 54305E2F2948C873006D3AAB /* music */; };
+		54305E322948C87E006D3AAB /* midis in Resources */ = {isa = PBXBuildFile; fileRef = 54305E312948C87E006D3AAB /* midis */; };
+		54337A7129448674000010F4 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B2C5628DBA32200879148 /* Renderer.swift */; };
+		5441FAB9295D8B6100E9649A /* EngineRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5441FAB8295D8B6100E9649A /* EngineRuntime.swift */; };
+		5441FABC295D915300E9649A /* ComputeShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5441FABB295D915300E9649A /* ComputeShaders.metal */; };
+		544E7B9D29657A7C00B37E82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544E7B9C29657A7C00B37E82 /* Assets.xcassets */; };
+		5451F67A293FC7F200F818B0 /* BasicGLTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4E68228E03F9500D20320 /* BasicGLTF.swift */; };
+		5451F67B293FC7FE00F818B0 /* EngineComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54019617293D23EF007FD271 /* EngineComponents.swift */; };
+		5451F67C293FC80400F818B0 /* RendererExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A458B228DF507E00FA8901 /* RendererExtensions.swift */; };
+		5451F67D293FC87500F818B0 /* OptimizationShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 54A458B428DF574D00FA8901 /* OptimizationShaders.metal */; };
+		545306F429619008000D846D /* videos in Resources */ = {isa = PBXBuildFile; fileRef = 545306F329619008000D846D /* videos */; };
+		5478D3AA294C5EF400CAD475 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5478D3A9294C5EF400CAD475 /* main.swift */; };
+		5478D3AE294C5F1F00CAD475 /* EngineComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54019617293D23EF007FD271 /* EngineComponents.swift */; };
+		5478D3AF294C5F2400CAD475 /* EngineSystems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1A7A529433233003C583C /* EngineSystems.swift */; };
+		5478D3B0294C5F5E00CAD475 /* BasicGLTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4E68228E03F9500D20320 /* BasicGLTF.swift */; };
+		5478D3B1294C5F6100CAD475 /* GLBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE91682926CD240012006B /* GLBFile.swift */; };
+		5478D3B2294C5F6400CAD475 /* MathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B2C5F28DC706000879148 /* MathFunctions.swift */; };
+		5478D3B4294C5F6E00CAD475 /* ShredRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F584B2946C90800D063D2 /* ShredRegistry.swift */; };
+		5478D3B5294C5F7100CAD475 /* MetalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418E5DA28E625540095562D /* MetalScene.swift */; };
+		5478D3BA294C753400CAD475 /* ScriptingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5478D3B9294C753400CAD475 /* ScriptingContext.swift */; };
+		5478D3BB294C753400CAD475 /* ScriptingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5478D3B9294C753400CAD475 /* ScriptingContext.swift */; };
+		5478D3BD294C753400CAD475 /* ScriptingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5478D3B9294C753400CAD475 /* ScriptingContext.swift */; };
+		5478D3BE294C768E00CAD475 /* scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543011B929424ACB00212A0F /* scripts.swift */; };
+		5478D3BF294C768F00CAD475 /* scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543011B929424ACB00212A0F /* scripts.swift */; };
+		5478D3C0294C769100CAD475 /* scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543011B929424ACB00212A0F /* scripts.swift */; };
+		5478D3C2294C89B000CAD475 /* AudioAndMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F58452946A21800D063D2 /* AudioAndMidi.swift */; };
+		548EB6E9294280290099A8C3 /* libIOSSnippetUtils_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E0294280290099A8C3 /* libIOSSnippetUtils_static_64.a */; platformFilter = ios; };
+		548EB6EA294280290099A8C3 /* libIOSPhysXFoundation_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E1294280290099A8C3 /* libIOSPhysXFoundation_static_64.a */; platformFilter = ios; };
+		548EB6EB294280290099A8C3 /* libIOSPhysXCooking_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E2294280290099A8C3 /* libIOSPhysXCooking_static_64.a */; platformFilter = ios; };
+		548EB6EC294280290099A8C3 /* libIOSPhysXCharacterKinematic_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E3294280290099A8C3 /* libIOSPhysXCharacterKinematic_static_64.a */; platformFilter = ios; };
+		548EB6ED294280290099A8C3 /* libIOSPhysXExtensions_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E4294280290099A8C3 /* libIOSPhysXExtensions_static_64.a */; platformFilter = ios; };
+		548EB6EE294280290099A8C3 /* libIOSPhysX_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E5294280290099A8C3 /* libIOSPhysX_static_64.a */; platformFilter = ios; };
+		548EB6EF294280290099A8C3 /* libIOSPhysXCommon_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E6294280290099A8C3 /* libIOSPhysXCommon_static_64.a */; platformFilter = ios; };
+		548EB6F0294280290099A8C3 /* libIOSPhysXPvdSDK_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E7294280290099A8C3 /* libIOSPhysXPvdSDK_static_64.a */; platformFilter = ios; };
+		548EB6F1294280290099A8C3 /* libIOSPhysXVehicle_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6E8294280290099A8C3 /* libIOSPhysXVehicle_static_64.a */; platformFilter = ios; };
+		548EB6FB294280760099A8C3 /* libCatalystPhysXCommon_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6F2294280760099A8C3 /* libCatalystPhysXCommon_static_64.a */; platformFilter = maccatalyst; };
+		548EB6FC294280760099A8C3 /* libCatalystPhysXFoundation_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6F3294280760099A8C3 /* libCatalystPhysXFoundation_static_64.a */; platformFilter = maccatalyst; };
+		548EB6FD294280760099A8C3 /* libCatalystPhysXCooking_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6F4294280760099A8C3 /* libCatalystPhysXCooking_static_64.a */; platformFilter = maccatalyst; };
+		548EB6FE294280760099A8C3 /* libCatalystSnippetUtils_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6F5294280760099A8C3 /* libCatalystSnippetUtils_static_64.a */; platformFilter = maccatalyst; };
+		548EB6FF294280760099A8C3 /* libCatalystPhysXPvdSDK_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6F6294280760099A8C3 /* libCatalystPhysXPvdSDK_static_64.a */; platformFilter = maccatalyst; };
+		548EB700294280760099A8C3 /* libCatalystPhysX_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6F7294280760099A8C3 /* libCatalystPhysX_static_64.a */; platformFilter = maccatalyst; };
+		548EB701294280760099A8C3 /* libCatalystPhysXExtensions_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6F8294280760099A8C3 /* libCatalystPhysXExtensions_static_64.a */; platformFilter = maccatalyst; };
+		548EB702294280760099A8C3 /* libCatalystPhysXVehicle_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6F9294280760099A8C3 /* libCatalystPhysXVehicle_static_64.a */; platformFilter = maccatalyst; };
+		548EB703294280760099A8C3 /* libCatalystPhysXCharacterKinematic_static_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548EB6FA294280760099A8C3 /* libCatalystPhysXCharacterKinematic_static_64.a */; platformFilter = maccatalyst; };
+		548F58492946C27400D063D2 /* AudioAndMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F58452946A21800D063D2 /* AudioAndMidi.swift */; };
+		548F584C2946C90800D063D2 /* ShredRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F584B2946C90800D063D2 /* ShredRegistry.swift */; };
+		549EA08D296DD4E700D40214 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 549EA08C296DD4E700D40214 /* Media.xcassets */; };
+		54B292AB296AB32700141FBA /* mikktspace.c in Sources */ = {isa = PBXBuildFile; fileRef = 54B292A9296AB32400141FBA /* mikktspace.c */; };
+		54B292AD296AB64300141FBA /* RendererCBindings.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54B292A6296AB1AF00141FBA /* RendererCBindings.mm */; };
+		54BD806A295743D1006DEC7A /* environments in Resources */ = {isa = PBXBuildFile; fileRef = 54BD8069295743D1006DEC7A /* environments */; };
+		54DBFB3E2947B0F600A8FAFB /* AudioAndMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F58452946A21800D063D2 /* AudioAndMidi.swift */; };
+		54DBFB412947B19C00A8FAFB /* MathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B2C5F28DC706000879148 /* MathFunctions.swift */; };
+		54DBFB422947B1A600A8FAFB /* EngineComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54019617293D23EF007FD271 /* EngineComponents.swift */; };
+		54DBFB432947B1B500A8FAFB /* ShredRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F584B2946C90800D063D2 /* ShredRegistry.swift */; };
+		54DBFB462947B21D00A8FAFB /* EngineSystems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1A7A529433233003C583C /* EngineSystems.swift */; };
+		54DBFB532948C68100A8FAFB /* scenes in Resources */ = {isa = PBXBuildFile; fileRef = 54DBFB522948C68100A8FAFB /* scenes */; };
+		54DF437E29588242004DEFEC /* EngineMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF437D29588242004DEFEC /* EngineMenuView.swift */; };
+		54E1A7A629433284003C583C /* EngineSystems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1A7A529433233003C583C /* EngineSystems.swift */; };
+		54E4E68B28E0520D00D20320 /* swiftui_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4E68A28E0520D00D20320 /* swiftui_testTests.swift */; };
+		54E4E69128E05C1700D20320 /* BasicGLTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4E68228E03F9500D20320 /* BasicGLTF.swift */; };
+		54EE916A2926CEF40012006B /* GLBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE91682926CD240012006B /* GLBFile.swift */; };
+		54EE916B2926CEF70012006B /* GLBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE91682926CD240012006B /* GLBFile.swift */; };
+		54FBA9D22950F44400EC606A /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBA9D12950F44400EC606A /* ParticleSystem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		5403F66628DE324A0073A0DB /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.metal;
+			fileType = sourcecode.metal;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# metal\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		5478D3B6294C723C00CAD475 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 547B2C3C28DBA08600879148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5478D3A6294C5EF400CAD475;
+			remoteInfo = scriptsToJson;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5478D3A5294C5EF400CAD475 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54019617293D23EF007FD271 /* EngineComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineComponents.swift; sourceTree = "<group>"; };
+		5403F65128DE28060073A0DB /* shred_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shred_iosApp.swift; sourceTree = "<group>"; };
+		5403F65328DE28060073A0DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5403F65828DE28070073A0DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5403F65D28DE28160073A0DB /* shred_ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shred_ios.entitlements; sourceTree = "<group>"; };
+		5413EEB4294140DE00BFC589 /* FilePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePicker.swift; sourceTree = "<group>"; };
+		5418E5DA28E625540095562D /* MetalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalScene.swift; sourceTree = "<group>"; };
+		541AFD42297D2C2600632374 /* ShadowShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ShadowShaders.metal; sourceTree = "<group>"; };
+		5427212D297C8B2800080DAA /* InputSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSystem.swift; sourceTree = "<group>"; };
+		543011B929424ACB00212A0F /* scripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scripts.swift; sourceTree = "<group>"; };
+		543011EF294274C500212A0F /* PhysxBindings.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysxBindings.mm; sourceTree = "<group>"; };
+		54305E2F2948C873006D3AAB /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = music; path = assets/music; sourceTree = "<group>"; };
+		54305E312948C87E006D3AAB /* midis */ = {isa = PBXFileReference; lastKnownFileType = folder; name = midis; path = assets/midis; sourceTree = "<group>"; };
+		5441FAB8295D8B6100E9649A /* EngineRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineRuntime.swift; sourceTree = "<group>"; };
+		5441FABB295D915300E9649A /* ComputeShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ComputeShaders.metal; sourceTree = "<group>"; };
+		544E7B9C29657A7C00B37E82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		545306F329619008000D846D /* videos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = videos; path = assets/videos; sourceTree = "<group>"; };
+		54535F382943E1A700513036 /* shred-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "shred-ios-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5462B57A29657D160036A638 /* shred_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shred_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5478D3A9294C5EF400CAD475 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5478D3B9294C753400CAD475 /* ScriptingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptingContext.swift; sourceTree = "<group>"; };
+		547B2C5628DBA32200879148 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		547B2C5828DBA35200879148 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		547B2C5928DBA35200879148 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		547B2C5F28DC706000879148 /* MathFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunctions.swift; sourceTree = "<group>"; };
+		547B2C6128DC9A6600879148 /* MetalFlightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalFlightController.swift; sourceTree = "<group>"; };
+		548EB6E0294280290099A8C3 /* libIOSSnippetUtils_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSSnippetUtils_static_64.a; path = libraries/libIOSSnippetUtils_static_64.a; sourceTree = "<group>"; };
+		548EB6E1294280290099A8C3 /* libIOSPhysXFoundation_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSPhysXFoundation_static_64.a; path = libraries/libIOSPhysXFoundation_static_64.a; sourceTree = "<group>"; };
+		548EB6E2294280290099A8C3 /* libIOSPhysXCooking_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSPhysXCooking_static_64.a; path = libraries/libIOSPhysXCooking_static_64.a; sourceTree = "<group>"; };
+		548EB6E3294280290099A8C3 /* libIOSPhysXCharacterKinematic_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSPhysXCharacterKinematic_static_64.a; path = libraries/libIOSPhysXCharacterKinematic_static_64.a; sourceTree = "<group>"; };
+		548EB6E4294280290099A8C3 /* libIOSPhysXExtensions_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSPhysXExtensions_static_64.a; path = libraries/libIOSPhysXExtensions_static_64.a; sourceTree = "<group>"; };
+		548EB6E5294280290099A8C3 /* libIOSPhysX_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSPhysX_static_64.a; path = libraries/libIOSPhysX_static_64.a; sourceTree = "<group>"; };
+		548EB6E6294280290099A8C3 /* libIOSPhysXCommon_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSPhysXCommon_static_64.a; path = libraries/libIOSPhysXCommon_static_64.a; sourceTree = "<group>"; };
+		548EB6E7294280290099A8C3 /* libIOSPhysXPvdSDK_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSPhysXPvdSDK_static_64.a; path = libraries/libIOSPhysXPvdSDK_static_64.a; sourceTree = "<group>"; };
+		548EB6E8294280290099A8C3 /* libIOSPhysXVehicle_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIOSPhysXVehicle_static_64.a; path = libraries/libIOSPhysXVehicle_static_64.a; sourceTree = "<group>"; };
+		548EB6F2294280760099A8C3 /* libCatalystPhysXCommon_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystPhysXCommon_static_64.a; path = libraries/libCatalystPhysXCommon_static_64.a; sourceTree = "<group>"; };
+		548EB6F3294280760099A8C3 /* libCatalystPhysXFoundation_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystPhysXFoundation_static_64.a; path = libraries/libCatalystPhysXFoundation_static_64.a; sourceTree = "<group>"; };
+		548EB6F4294280760099A8C3 /* libCatalystPhysXCooking_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystPhysXCooking_static_64.a; path = libraries/libCatalystPhysXCooking_static_64.a; sourceTree = "<group>"; };
+		548EB6F5294280760099A8C3 /* libCatalystSnippetUtils_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystSnippetUtils_static_64.a; path = libraries/libCatalystSnippetUtils_static_64.a; sourceTree = "<group>"; };
+		548EB6F6294280760099A8C3 /* libCatalystPhysXPvdSDK_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystPhysXPvdSDK_static_64.a; path = libraries/libCatalystPhysXPvdSDK_static_64.a; sourceTree = "<group>"; };
+		548EB6F7294280760099A8C3 /* libCatalystPhysX_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystPhysX_static_64.a; path = libraries/libCatalystPhysX_static_64.a; sourceTree = "<group>"; };
+		548EB6F8294280760099A8C3 /* libCatalystPhysXExtensions_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystPhysXExtensions_static_64.a; path = libraries/libCatalystPhysXExtensions_static_64.a; sourceTree = "<group>"; };
+		548EB6F9294280760099A8C3 /* libCatalystPhysXVehicle_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystPhysXVehicle_static_64.a; path = libraries/libCatalystPhysXVehicle_static_64.a; sourceTree = "<group>"; };
+		548EB6FA294280760099A8C3 /* libCatalystPhysXCharacterKinematic_static_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCatalystPhysXCharacterKinematic_static_64.a; path = libraries/libCatalystPhysXCharacterKinematic_static_64.a; sourceTree = "<group>"; };
+		548F58452946A21800D063D2 /* AudioAndMidi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAndMidi.swift; sourceTree = "<group>"; };
+		548F584B2946C90800D063D2 /* ShredRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShredRegistry.swift; sourceTree = "<group>"; };
+		549C061228DF35B200C9D92A /* ShaderHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderHelpers.h; sourceTree = "<group>"; };
+		549EA08C296DD4E700D40214 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		54A458B228DF507E00FA8901 /* RendererExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererExtensions.swift; sourceTree = "<group>"; };
+		54A458B428DF574D00FA8901 /* OptimizationShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = OptimizationShaders.metal; sourceTree = "<group>"; };
+		54B292A4296A002300141FBA /* scriptsToJson */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = scriptsToJson; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B292A5296A002300141FBA /* nanoshredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nanoshredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B292A6296AB1AF00141FBA /* RendererCBindings.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererCBindings.mm; sourceTree = "<group>"; };
+		54B292A8296AB1F800141FBA /* RendererCBindings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = RendererCBindings.h; sourceTree = "<group>"; };
+		54B292A9296AB32400141FBA /* mikktspace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mikktspace.c; sourceTree = "<group>"; };
+		54B292AA296AB32400141FBA /* mikktspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mikktspace.h; sourceTree = "<group>"; };
+		54BD8069295743D1006DEC7A /* environments */ = {isa = PBXFileReference; lastKnownFileType = folder; name = environments; path = assets/environments; sourceTree = "<group>"; };
+		54DBFB522948C68100A8FAFB /* scenes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scenes; path = assets/scenes; sourceTree = "<group>"; };
+		54DF437D29588242004DEFEC /* EngineMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineMenuView.swift; sourceTree = "<group>"; };
+		54E1A79F29432D04003C583C /* PhysxBindings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = PhysxBindings.h; sourceTree = "<group>"; };
+		54E1A7A129432D94003C583C /* SwiftBridgingHeader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = SwiftBridgingHeader.h; path = common/SwiftBridgingHeader.h; sourceTree = SOURCE_ROOT; };
+		54E1A7A529433233003C583C /* EngineSystems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineSystems.swift; sourceTree = "<group>"; };
+		54E1A7A729433A4D003C583C /* ScriptExportBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScriptExportBridge.h; sourceTree = "<group>"; };
+		54E4E68228E03F9500D20320 /* BasicGLTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGLTF.swift; sourceTree = "<group>"; };
+		54E4E68A28E0520D00D20320 /* swiftui_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_testTests.swift; sourceTree = "<group>"; };
+		54EE91682926CD240012006B /* GLBFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLBFile.swift; sourceTree = "<group>"; };
+		54FBA9D12950F44400EC606A /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5403F64C28DE28050073A0DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548EB6F1294280290099A8C3 /* libIOSPhysXVehicle_static_64.a in Frameworks */,
+				548EB6EE294280290099A8C3 /* libIOSPhysX_static_64.a in Frameworks */,
+				548EB700294280760099A8C3 /* libCatalystPhysX_static_64.a in Frameworks */,
+				548EB6EF294280290099A8C3 /* libIOSPhysXCommon_static_64.a in Frameworks */,
+				548EB6FC294280760099A8C3 /* libCatalystPhysXFoundation_static_64.a in Frameworks */,
+				548EB703294280760099A8C3 /* libCatalystPhysXCharacterKinematic_static_64.a in Frameworks */,
+				548EB6FD294280760099A8C3 /* libCatalystPhysXCooking_static_64.a in Frameworks */,
+				548EB6FF294280760099A8C3 /* libCatalystPhysXPvdSDK_static_64.a in Frameworks */,
+				548EB6FE294280760099A8C3 /* libCatalystSnippetUtils_static_64.a in Frameworks */,
+				548EB6EC294280290099A8C3 /* libIOSPhysXCharacterKinematic_static_64.a in Frameworks */,
+				548EB702294280760099A8C3 /* libCatalystPhysXVehicle_static_64.a in Frameworks */,
+				548EB6E9294280290099A8C3 /* libIOSSnippetUtils_static_64.a in Frameworks */,
+				548EB6EA294280290099A8C3 /* libIOSPhysXFoundation_static_64.a in Frameworks */,
+				548EB6EB294280290099A8C3 /* libIOSPhysXCooking_static_64.a in Frameworks */,
+				548EB6F0294280290099A8C3 /* libIOSPhysXPvdSDK_static_64.a in Frameworks */,
+				548EB701294280760099A8C3 /* libCatalystPhysXExtensions_static_64.a in Frameworks */,
+				548EB6FB294280760099A8C3 /* libCatalystPhysXCommon_static_64.a in Frameworks */,
+				548EB6ED294280290099A8C3 /* libIOSPhysXExtensions_static_64.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5478D3A4294C5EF400CAD475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E4E68528E0520D00D20320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5403F65028DE28060073A0DB /* shred_ios */ = {
+			isa = PBXGroup;
+			children = (
+				544E7B9C29657A7C00B37E82 /* Assets.xcassets */,
+				54535F382943E1A700513036 /* shred-ios-Info.plist */,
+				5403F65D28DE28160073A0DB /* shred_ios.entitlements */,
+				5403F65128DE28060073A0DB /* shred_iosApp.swift */,
+				5403F65328DE28060073A0DB /* ContentView.swift */,
+				5403F65728DE28070073A0DB /* Preview Content */,
+				5413EEB4294140DE00BFC589 /* FilePicker.swift */,
+				54DF437D29588242004DEFEC /* EngineMenuView.swift */,
+			);
+			path = shred_ios;
+			sourceTree = "<group>";
+		};
+		5403F65728DE28070073A0DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5403F65828DE28070073A0DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5413EED12941FB8600BFC589 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				548EB6E5294280290099A8C3 /* libIOSPhysX_static_64.a */,
+				548EB6E3294280290099A8C3 /* libIOSPhysXCharacterKinematic_static_64.a */,
+				548EB6E6294280290099A8C3 /* libIOSPhysXCommon_static_64.a */,
+				548EB6E2294280290099A8C3 /* libIOSPhysXCooking_static_64.a */,
+				548EB6E4294280290099A8C3 /* libIOSPhysXExtensions_static_64.a */,
+				548EB6E1294280290099A8C3 /* libIOSPhysXFoundation_static_64.a */,
+				548EB6E7294280290099A8C3 /* libIOSPhysXPvdSDK_static_64.a */,
+				548EB6E8294280290099A8C3 /* libIOSPhysXVehicle_static_64.a */,
+				548EB6E0294280290099A8C3 /* libIOSSnippetUtils_static_64.a */,
+				548EB6F7294280760099A8C3 /* libCatalystPhysX_static_64.a */,
+				548EB6FA294280760099A8C3 /* libCatalystPhysXCharacterKinematic_static_64.a */,
+				548EB6F2294280760099A8C3 /* libCatalystPhysXCommon_static_64.a */,
+				548EB6F4294280760099A8C3 /* libCatalystPhysXCooking_static_64.a */,
+				548EB6F8294280760099A8C3 /* libCatalystPhysXExtensions_static_64.a */,
+				548EB6F3294280760099A8C3 /* libCatalystPhysXFoundation_static_64.a */,
+				548EB6F6294280760099A8C3 /* libCatalystPhysXPvdSDK_static_64.a */,
+				548EB6F9294280760099A8C3 /* libCatalystPhysXVehicle_static_64.a */,
+				548EB6F5294280760099A8C3 /* libCatalystSnippetUtils_static_64.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		543011B829424AC100212A0F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				548F58452946A21800D063D2 /* AudioAndMidi.swift */,
+				54E4E68228E03F9500D20320 /* BasicGLTF.swift */,
+				54EE91682926CD240012006B /* GLBFile.swift */,
+				547B2C5F28DC706000879148 /* MathFunctions.swift */,
+				54019617293D23EF007FD271 /* EngineComponents.swift */,
+				54E1A7A529433233003C583C /* EngineSystems.swift */,
+				5441FAB8295D8B6100E9649A /* EngineRuntime.swift */,
+				548F584B2946C90800D063D2 /* ShredRegistry.swift */,
+				5418E5DA28E625540095562D /* MetalScene.swift */,
+				543011EF294274C500212A0F /* PhysxBindings.mm */,
+				54E1A79F29432D04003C583C /* PhysxBindings.h */,
+				54E1A7A129432D94003C583C /* SwiftBridgingHeader.h */,
+				54FBA9D12950F44400EC606A /* ParticleSystem.swift */,
+				5427212D297C8B2800080DAA /* InputSystem.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		543011BC29424B2700212A0F /* scripting */ = {
+			isa = PBXGroup;
+			children = (
+				543011B929424ACB00212A0F /* scripts.swift */,
+				5478D3B9294C753400CAD475 /* ScriptingContext.swift */,
+				54E1A7A729433A4D003C583C /* ScriptExportBridge.h */,
+			);
+			path = scripting;
+			sourceTree = "<group>";
+		};
+		5478D3A8294C5EF400CAD475 /* scriptsToJson */ = {
+			isa = PBXGroup;
+			children = (
+				5478D3A9294C5EF400CAD475 /* main.swift */,
+			);
+			path = scriptsToJson;
+			sourceTree = "<group>";
+		};
+		547B2C3B28DBA08600879148 = {
+			isa = PBXGroup;
+			children = (
+				549EA08C296DD4E700D40214 /* Media.xcassets */,
+				545306F329619008000D846D /* videos */,
+				54BD8069295743D1006DEC7A /* environments */,
+				54305E312948C87E006D3AAB /* midis */,
+				54305E2F2948C873006D3AAB /* music */,
+				54DBFB522948C68100A8FAFB /* scenes */,
+				543011B829424AC100212A0F /* common */,
+				543011BC29424B2700212A0F /* scripting */,
+				547B2C4628DBA08600879148 /* Rendering */,
+				5403F65028DE28060073A0DB /* shred_ios */,
+				54E4E68928E0520D00D20320 /* swiftui-testTests */,
+				5478D3A8294C5EF400CAD475 /* scriptsToJson */,
+				5413EED12941FB8600BFC589 /* Frameworks */,
+				5462B57A29657D160036A638 /* shred_ios.app */,
+				54B292A4296A002300141FBA /* scriptsToJson */,
+				54B292A5296A002300141FBA /* nanoshredTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		547B2C4628DBA08600879148 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				54B292A9296AB32400141FBA /* mikktspace.c */,
+				54B292AA296AB32400141FBA /* mikktspace.h */,
+				54A458B428DF574D00FA8901 /* OptimizationShaders.metal */,
+				547B2C5828DBA35200879148 /* Shaders.metal */,
+				541AFD42297D2C2600632374 /* ShadowShaders.metal */,
+				5441FABB295D915300E9649A /* ComputeShaders.metal */,
+				547B2C5928DBA35200879148 /* ShaderTypes.h */,
+				549C061228DF35B200C9D92A /* ShaderHelpers.h */,
+				547B2C5628DBA32200879148 /* Renderer.swift */,
+				54A458B228DF507E00FA8901 /* RendererExtensions.swift */,
+				547B2C6128DC9A6600879148 /* MetalFlightController.swift */,
+				54B292A6296AB1AF00141FBA /* RendererCBindings.mm */,
+				54B292A8296AB1F800141FBA /* RendererCBindings.h */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		54E4E68928E0520D00D20320 /* swiftui-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				54E4E68A28E0520D00D20320 /* swiftui_testTests.swift */,
+			);
+			path = "swiftui-testTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5403F64E28DE28050073A0DB /* shred_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5403F65A28DE28070073A0DB /* Build configuration list for PBXNativeTarget "shred_ios" */;
+			buildPhases = (
+				5403F64B28DE28050073A0DB /* Sources */,
+				5403F64C28DE28050073A0DB /* Frameworks */,
+				5403F64D28DE28050073A0DB /* Resources */,
+			);
+			buildRules = (
+				5403F66628DE324A0073A0DB /* PBXBuildRule */,
+			);
+			dependencies = (
+				5478D3B7294C723C00CAD475 /* PBXTargetDependency */,
+			);
+			name = shred_ios;
+			packageProductDependencies = (
+			);
+			productName = shred_ios;
+			productReference = 5462B57A29657D160036A638 /* shred_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5478D3A6294C5EF400CAD475 /* scriptsToJson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5478D3AB294C5EF400CAD475 /* Build configuration list for PBXNativeTarget "scriptsToJson" */;
+			buildPhases = (
+				5478D3A3294C5EF400CAD475 /* Sources */,
+				5478D3A4294C5EF400CAD475 /* Frameworks */,
+				5478D3A5294C5EF400CAD475 /* CopyFiles */,
+				5478D3B8294C726600CAD475 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = scriptsToJson;
+			packageProductDependencies = (
+			);
+			productName = scriptsToJson;
+			productReference = 54B292A4296A002300141FBA /* scriptsToJson */;
+			productType = "com.apple.product-type.tool";
+		};
+		54E4E68728E0520D00D20320 /* nanoshredTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E4E68E28E0520D00D20320 /* Build configuration list for PBXNativeTarget "nanoshredTests" */;
+			buildPhases = (
+				54E4E68428E0520D00D20320 /* Sources */,
+				54E4E68528E0520D00D20320 /* Frameworks */,
+				54E4E68628E0520D00D20320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanoshredTests;
+			packageProductDependencies = (
+			);
+			productName = "swiftui-testTests";
+			productReference = 54B292A5296A002300141FBA /* nanoshredTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		547B2C3C28DBA08600879148 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					5403F64E28DE28050073A0DB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					5478D3A6294C5EF400CAD475 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					54E4E68728E0520D00D20320 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 547B2C3F28DBA08600879148 /* Build configuration list for PBXProject "nanoshred" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 547B2C3B28DBA08600879148;
+			packageReferences = (
+			);
+			productRefGroup = 547B2C3B28DBA08600879148;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5403F64E28DE28050073A0DB /* shred_ios */,
+				54E4E68728E0520D00D20320 /* nanoshredTests */,
+				5478D3A6294C5EF400CAD475 /* scriptsToJson */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5403F64D28DE28050073A0DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BD806A295743D1006DEC7A /* environments in Resources */,
+				54305E322948C87E006D3AAB /* midis in Resources */,
+				549EA08D296DD4E700D40214 /* Media.xcassets in Resources */,
+				54305E302948C873006D3AAB /* music in Resources */,
+				54DBFB532948C68100A8FAFB /* scenes in Resources */,
+				544E7B9D29657A7C00B37E82 /* Assets.xcassets in Resources */,
+				545306F429619008000D846D /* videos in Resources */,
+				5403F65928DE28070073A0DB /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E4E68628E0520D00D20320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5478D3B8294C726600CAD475 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/scriptsToJson",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/assets/scripts/scriptvars.json",
+				"$(SRCROOT)/assets/scripts/componentvars.json",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncodesign -s WA3ND58URM ${SCRIPT_INPUT_FILE_0}\n${SCRIPT_INPUT_FILE_0} ${SCRIPT_OUTPUT_FILE_0} ${SCRIPT_OUTPUT_FILE_1}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5403F64B28DE28050073A0DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FBA9D22950F44400EC606A /* ParticleSystem.swift in Sources */,
+				5427212E297C8B2800080DAA /* InputSystem.swift in Sources */,
+				54337A7129448674000010F4 /* Renderer.swift in Sources */,
+				5413EEB5294140DE00BFC589 /* FilePicker.swift in Sources */,
+				541AFD43297D2C2700632374 /* ShadowShaders.metal in Sources */,
+				54B292AB296AB32700141FBA /* mikktspace.c in Sources */,
+				54DF437E29588242004DEFEC /* EngineMenuView.swift in Sources */,
+				5403F66528DE28490073A0DB /* Shaders.metal in Sources */,
+				5451F67B293FC7FE00F818B0 /* EngineComponents.swift in Sources */,
+				54B292AD296AB64300141FBA /* RendererCBindings.mm in Sources */,
+				5451F67A293FC7F200F818B0 /* BasicGLTF.swift in Sources */,
+				54EE916B2926CEF70012006B /* GLBFile.swift in Sources */,
+				5403F65428DE28060073A0DB /* ContentView.swift in Sources */,
+				5403F65F28DE28340073A0DB /* MathFunctions.swift in Sources */,
+				5441FABC295D915300E9649A /* ComputeShaders.metal in Sources */,
+				5401B0D7293CD4E800EB2B90 /* MetalScene.swift in Sources */,
+				5403F65E28DE28320073A0DB /* MetalFlightController.swift in Sources */,
+				548F58492946C27400D063D2 /* AudioAndMidi.swift in Sources */,
+				5478D3BA294C753400CAD475 /* ScriptingContext.swift in Sources */,
+				548F584C2946C90800D063D2 /* ShredRegistry.swift in Sources */,
+				5478D3BE294C768E00CAD475 /* scripts.swift in Sources */,
+				5441FAB9295D8B6100E9649A /* EngineRuntime.swift in Sources */,
+				5451F67C293FC80400F818B0 /* RendererExtensions.swift in Sources */,
+				54E1A7A629433284003C583C /* EngineSystems.swift in Sources */,
+				5403F65228DE28060073A0DB /* shred_iosApp.swift in Sources */,
+				5451F67D293FC87500F818B0 /* OptimizationShaders.metal in Sources */,
+				543011F1294274C500212A0F /* PhysxBindings.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5478D3A3294C5EF400CAD475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5478D3C2294C89B000CAD475 /* AudioAndMidi.swift in Sources */,
+				5427212F297C8B4200080DAA /* InputSystem.swift in Sources */,
+				5478D3BF294C768F00CAD475 /* scripts.swift in Sources */,
+				5478D3AA294C5EF400CAD475 /* main.swift in Sources */,
+				5478D3B0294C5F5E00CAD475 /* BasicGLTF.swift in Sources */,
+				5478D3BD294C753400CAD475 /* ScriptingContext.swift in Sources */,
+				5478D3AE294C5F1F00CAD475 /* EngineComponents.swift in Sources */,
+				5478D3AF294C5F2400CAD475 /* EngineSystems.swift in Sources */,
+				5478D3B5294C5F7100CAD475 /* MetalScene.swift in Sources */,
+				5478D3B1294C5F6100CAD475 /* GLBFile.swift in Sources */,
+				5478D3B4294C5F6E00CAD475 /* ShredRegistry.swift in Sources */,
+				5478D3B2294C5F6400CAD475 /* MathFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E4E68428E0520D00D20320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E4E68B28E0520D00D20320 /* swiftui_testTests.swift in Sources */,
+				54272130297C8B4300080DAA /* InputSystem.swift in Sources */,
+				54DBFB422947B1A600A8FAFB /* EngineComponents.swift in Sources */,
+				54DBFB462947B21D00A8FAFB /* EngineSystems.swift in Sources */,
+				5401B0D6293CD4E800EB2B90 /* MetalScene.swift in Sources */,
+				54EE916A2926CEF40012006B /* GLBFile.swift in Sources */,
+				5478D3BB294C753400CAD475 /* ScriptingContext.swift in Sources */,
+				54DBFB3E2947B0F600A8FAFB /* AudioAndMidi.swift in Sources */,
+				5478D3C0294C769100CAD475 /* scripts.swift in Sources */,
+				54DBFB432947B1B500A8FAFB /* ShredRegistry.swift in Sources */,
+				54E4E69128E05C1700D20320 /* BasicGLTF.swift in Sources */,
+				54DBFB412947B19C00A8FAFB /* MathFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5478D3B7294C723C00CAD475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5478D3A6294C5EF400CAD475 /* scriptsToJson */;
+			targetProxy = 5478D3B6294C723C00CAD475 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5403F65B28DE28070073A0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon 1";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_LINK_OBJC_RUNTIME = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = shred_ios/shred_ios.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"shred_ios/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libraries/physx/include\"";
+				INFOPLIST_FILE = "shred-ios-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "shred can use your media library to play supported songs locally.";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "shred can load assets from your Documents folder.";
+				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "shred can load assets from your Downloads folder.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "shred can connect to remote debugger and Blender instances.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/libraries/physx",
+					"$(PROJECT_DIR)/libraries/debug",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_MODULES = STDLIB;
+				MTL_LANGUAGE_REVISION = Metal24;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.shred-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/../../gamespace/shred_scripts/build/shred_scripts/Build/Products/Debug-iphoneos/\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/common/SwiftBridgingHeader.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libraries/physx/include\"";
+			};
+			name = Debug;
+		};
+		5403F65C28DE28070073A0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon 1";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_LINK_OBJC_RUNTIME = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = shred_ios/shred_ios.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"shred_ios/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libraries/physx/include\"";
+				INFOPLIST_FILE = "shred-ios-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "shred can use your media library to play supported songs locally.";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "shred can load assets from your Documents folder.";
+				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "shred can load assets from your Downloads folder.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "shred can connect to remote debugger and Blender instances.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/libraries/physx",
+					"$(PROJECT_DIR)/libraries",
+				);
+				LLVM_LTO = YES_THIN;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_ENABLE_MODULES = STDLIB;
+				MTL_LANGUAGE_REVISION = Metal24;
+				MTL_OPTIMIZATION_LEVEL = default;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.shred-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/../../gamespace/shred_scripts/build/shred_scripts/Build/Products/Debug-iphoneos/\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/common/SwiftBridgingHeader.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libraries/physx/include\"";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5478D3AC294C5EF400CAD475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84424LZRNU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG SCRIPT_CONTEXT";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/scripting/ScriptExportBridge.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5478D3AD294C5EF400CAD475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84424LZRNU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SCRIPT_CONTEXT;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/scripting/ScriptExportBridge.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		547B2C5128DBA08600879148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG GLTFMetalBindings";
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/../../gamespace/shred_scripts/shred_scripts\"";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		547B2C5228DBA08600879148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = GLTFMetalBindings;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/../../gamespace/shred_scripts/shred_scripts\"";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		54E4E68F28E0520D00D20320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84424LZRNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LLVM_LTO = YES_THIN;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shaderheart.swiftui-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG GLTFMetalBindings SCRIPT_CONTEXT";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/common/SwiftBridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54E4E69028E0520D00D20320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84424LZRNU;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LLVM_LTO = YES_THIN;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shaderheart.swiftui-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "GLTFMetalBindings SCRIPT_CONTEXT";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/common/SwiftBridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5403F65A28DE28070073A0DB /* Build configuration list for PBXNativeTarget "shred_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5403F65B28DE28070073A0DB /* Debug */,
+				5403F65C28DE28070073A0DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5478D3AB294C5EF400CAD475 /* Build configuration list for PBXNativeTarget "scriptsToJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5478D3AC294C5EF400CAD475 /* Debug */,
+				5478D3AD294C5EF400CAD475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547B2C3F28DBA08600879148 /* Build configuration list for PBXProject "nanoshred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547B2C5128DBA08600879148 /* Debug */,
+				547B2C5228DBA08600879148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E4E68E28E0520D00D20320 /* Build configuration list for PBXNativeTarget "nanoshredTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E4E68F28E0520D00D20320 /* Debug */,
+				54E4E69028E0520D00D20320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 547B2C3C28DBA08600879148 /* Project object */;
+}

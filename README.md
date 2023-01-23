@@ -13,6 +13,7 @@
  - Custom PBR renderer implemented with Metal2, with alpha-clipped and glass material support
  - Uses PhysX for physics through an ObjC++-Swift binding layer
  - Video-as-a-texture support using AVKit
+ - Tap detectors and on-screen tappable objects using the renderer
  
  ## Screenshots
  Car Scene with an HDRI Background, Reflections and Glass:
@@ -20,4 +21,4 @@
 ![Screenshot 2023-01-23 at 10 59 03 copy](https://user-images.githubusercontent.com/69399262/214122366-1bde8a55-d3e4-48e6-b9ef-ab264f69aa1e.png)
 
 Material rough/metallic, HDRI Background and Reflections:
-![Screenshot 2023-01-23 at 11 08 07](https://user-images.githubusercontent.com/69399262/214122531-eaaa7adc-db81-439e-80dd-724f1b874769.png)
+![Screenshot 2023-01-23 at 22 45 31](https://user-images.githubusercontent.com/69399262/214137714-105202db-4597-4281-abc9-2d3b6d60b401.png)

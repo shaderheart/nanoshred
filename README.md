@@ -14,6 +14,7 @@
  - Uses PhysX for physics through an ObjC++-Swift binding layer
  - Video-as-a-texture support using AVKit
  - Tap detectors and on-screen tappable objects using the renderer
+ - Skeletal animations, both with skinned meshes and bone-attached objects
  
  ## Screenshots
  Car Scene with an HDRI Background, Reflections and Glass:
@@ -22,3 +23,12 @@
 
 Material rough/metallic, HDRI Background and Reflections:
 ![Screenshot 2023-01-23 at 22 45 31](https://user-images.githubusercontent.com/69399262/214137714-105202db-4597-4281-abc9-2d3b6d60b401.png)
+
+## Videos
+Automatic Updates on Scene Changes
+<video src="https://user-images.githubusercontent.com/69399262/214145460-a4edf08b-7a2c-40c7-a32f-6340b2e67f2f.mp4">
+
+
+Video Textures, Bone Animations:
+<video src="https://user-images.githubusercontent.com/69399262/214143511-a7439d16-3214-428c-9e65-00dd19d88870.mp4">
+
